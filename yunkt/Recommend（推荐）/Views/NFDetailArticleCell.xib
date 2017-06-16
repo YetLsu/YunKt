@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="方正细圆简体.ttf">
+            <string>FZY1JW--GB1-0</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="KGk-i7-Jjw" customClass="NFDetailArticleCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nAH-K6-yTN">
+                        <rect key="frame" x="10" y="10" width="125" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="D5T-q9-f9L"/>
+                            <constraint firstAttribute="height" constant="90" id="J4B-Jw-CAw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khF-k3-5qh">
+                        <rect key="frame" x="150" y="10" width="187" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="qHJ-Da-3Ip"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZY1JW--GB1-0" family="FZXiYuan-M01S" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaM-bg-tM0">
+                        <rect key="frame" x="150" y="33" width="187" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="LWC-lp-eTG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZY1JW--GB1-0" family="FZXiYuan-M01S" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_posion" translatesAutoresizingMaskIntoConstraints="NO" id="uvx-Rt-PWx">
+                        <rect key="frame" x="150" y="85" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="3kl-pg-6FX"/>
+                            <constraint firstAttribute="height" constant="15" id="p9z-mP-jro"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-fk-YMS">
+                        <rect key="frame" x="170" y="82" width="100" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="1Xk-wE-5MH"/>
+                            <constraint firstAttribute="width" constant="100" id="Ymw-is-NrK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FZY1JW--GB1-0" family="FZXiYuan-M01S" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="khF-k3-5qh" firstAttribute="leading" secondItem="nAH-K6-yTN" secondAttribute="trailing" constant="15" id="0eI-bz-5Q2"/>
+                    <constraint firstAttribute="trailing" secondItem="khF-k3-5qh" secondAttribute="trailing" constant="10" id="0pc-CK-Y12"/>
+                    <constraint firstItem="EaM-bg-tM0" firstAttribute="top" secondItem="khF-k3-5qh" secondAttribute="bottom" id="1iv-Rx-rdf"/>
+                    <constraint firstAttribute="trailing" secondItem="EaM-bg-tM0" secondAttribute="trailing" constant="10" id="4wP-J8-jCT"/>
+                    <constraint firstItem="nAH-K6-yTN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="7n0-Dl-UE3"/>
+                    <constraint firstItem="khF-k3-5qh" firstAttribute="top" secondItem="nAH-K6-yTN" secondAttribute="top" id="DwJ-FP-q8E"/>
+                    <constraint firstItem="Eni-fk-YMS" firstAttribute="bottom" secondItem="uvx-Rt-PWx" secondAttribute="bottom" constant="4" id="EYJ-1s-vOg"/>
+                    <constraint firstItem="uvx-Rt-PWx" firstAttribute="bottom" secondItem="nAH-K6-yTN" secondAttribute="bottom" id="GUe-RQ-2yv"/>
+                    <constraint firstItem="Eni-fk-YMS" firstAttribute="leading" secondItem="uvx-Rt-PWx" secondAttribute="trailing" constant="5" id="hKu-Kj-DYU"/>
+                    <constraint firstItem="EaM-bg-tM0" firstAttribute="leading" secondItem="nAH-K6-yTN" secondAttribute="trailing" constant="15" id="pzB-wX-TIw"/>
+                    <constraint firstItem="nAH-K6-yTN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="u0m-fY-cTu"/>
+                    <constraint firstItem="uvx-Rt-PWx" firstAttribute="leading" secondItem="nAH-K6-yTN" secondAttribute="trailing" constant="15" id="zIZ-NT-ak9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailImageView" destination="nAH-K6-yTN" id="Zhk-di-WMv"/>
+                <outlet property="readCountLabel" destination="Eni-fk-YMS" id="MIq-UK-VYP"/>
+                <outlet property="shortArticleLabel" destination="EaM-bg-tM0" id="65h-7w-0mp"/>
+                <outlet property="titleLabel" destination="khF-k3-5qh" id="1uu-TJ-Ja3"/>
+            </connections>
+            <point key="canvasLocation" x="-137" y="-195"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_posion" width="15" height="15"/>
+    </resources>
+</document>
